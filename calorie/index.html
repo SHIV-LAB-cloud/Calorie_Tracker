@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Tracker</h1>
+        <div class="tracker">
+            <p>Calories Consumed: <span id="calories-consumed">0</span></p>
+            <p>Calorie Goal: <input type="text"  id="calorie-goal" style="width: 200px;"> <button id="cal_bt" style="width: 100px;  height: 40px; " onclick="calgoal()">Set Goal</button></p>
+
+            <p style="margin-bottom: 20px;">Calories Remaining: <span id="calories-remaining">enter the goal </span></p>
+        </div>
+        <input type="text" id="meal-input" placeholder="Enter meal name">
+        <button id="add-meal">Add Meal</button>
+        <table id="meal-table">
+            <caption> Meal deatils</caption>
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Calories</th>
+                    <th>Protein (g)</th>
+                    <th>Carbs (g)</th>
+                    <th>Fat (g)</th>
+                    <th>Sodium (mg)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Meals will be added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>© 2024 Calorie Tracker</p>
+    </footer>
+</body>
+</html>
+
